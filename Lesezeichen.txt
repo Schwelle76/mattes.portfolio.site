@@ -1,4 +1,4 @@
-In: 'Hello CSS' - https://www.internetingishard.com/html-and-css/hello-css/
-Next Part: 'units of measurement'
+In: 'the box model' - https://www.internetingishard.com/html-and-css/css-box-model/
+Next Part: the box model
 
     bis flexbox
