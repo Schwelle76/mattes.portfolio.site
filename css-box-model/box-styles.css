@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+h1, p{
+    background-color: #dde0e3;
+    padding: 100px 100px 30px 30px;
+    border-bottom: 15px dotted #c11818;
+}
+
+em, strong {
+    background-color: #b2d6ff;
+    margin:30px;
+}
+
+div{
+    color: #FFF;
+    background-color: #5995DA;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+    width: 200px;
+    margin: 30px auto;
+    box-sizing: border-box;
+}

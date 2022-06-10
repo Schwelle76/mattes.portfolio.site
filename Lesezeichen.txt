@@ -1,4 +1,2 @@
-In: 'the box model' - https://www.internetingishard.com/html-and-css/css-box-model/
-Next Part: the box model
-
-    bis flexbox
+In: 'css selectors' - https://www.internetingishard.com/html-and-css/css-selectors/
+Next Part: css selectors
