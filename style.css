@@ -1,0 +1,59 @@
+:root {
+  --background-color1: rgb(8, 8, 8);
+  --background-color2: rgb(55, 55, 55);
+  --text-color : rgb(255, 255, 255);
+}
+
+body{
+    color:rgb(255, 255, 255);
+    color: var(--text-color);
+    background-color:  rgb(8, 8, 8);
+    background-image: linear-gradient(to top right, var(--background-color1), var(--background-color1), var(--background-color2));
+    font-size: 12px;
+
+}
+
+h1 {
+    margin: 150px;
+    text-align: center;
+    font-size: 8em;
+  }
+
+h2{
+font-size: 3em;
+}
+
+h1, h2, h3, h4{
+  font-family: "Calisto MT", "Arial", sans-serif;
+}
+
+ul.images {
+  margin-bottom: 200px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  list-style-type: none;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none; 
+}
+
+ul.img li {
+  flex: 0 0 auto;
+  height: 500px;
+  width: auto;
+}
+
+ul::-webkit-scrollbar { width: 0 !important }
+
+img {
+  margin: 100px;
+  height: 500px;
+  width: auto;
+}
+
+
+h1, h2, h3, h4, p, ul, ol{
+  list-style-position: inside;
+  text-align: center;
+}
