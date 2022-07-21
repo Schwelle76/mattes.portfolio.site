@@ -13,10 +13,18 @@ body{
 
 }
 
+.name{
+}
+
+
 h1 {
     margin: 150px;
     text-align: center;
     font-size: 8em;
+  }
+
+  h1.invisible {
+    display:none;
   }
 
 h2{
@@ -36,12 +44,15 @@ ul.images {
   list-style-type: none;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none; 
+  scroll-behavior: smooth;
 }
 
-ul.img li {
+ul.images li {
   flex: 0 0 auto;
-  height: 500px;
-  width: auto;
+  width: 1000;
+  padding-left: 250;
+  padding-right: 250;
+
 }
 
 ul::-webkit-scrollbar { width: 0 !important }
