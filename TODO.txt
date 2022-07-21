@@ -1,0 +1,13 @@
+TODO
+
+-  slideList.scrollLeft = 1500 * centralSlide + 50;
+    in scroll-buttons.js ist hardcoded und funktioniert nicht auf anderen Bildschirmformaten.
+    Wo kommen diese Zahlen her und wie lässt sich darauf zugreifen
+        ->1500 kommt wahrscheinlich aus der ul.projectSlideList li
+        -> und die 50?
+
+-Buttons schön machen
+
+-Projekte erweitern und ausfüllen
+-Kurzbeschreibung zu mir ('Student bei Code&Context' oder so)
+-Contact me Container

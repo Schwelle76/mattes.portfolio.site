@@ -35,19 +35,19 @@ h1, h2, h3, h4{
   font-family: "Calisto MT", "Arial", sans-serif;
 }
 
-ul.images {
-  margin-bottom: 200px;
+ul.projectSlideList {
   padding: 0;
   display: flex;
   flex-direction: row;
-  overflow-x: auto;
+  overflow-x: hidden;
   list-style-type: none;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none; 
+  touch-action: none;
   scroll-behavior: smooth;
 }
 
-ul.images li {
+ul.projectSlideList li {
   flex: 0 0 auto;
   width: 1000;
   padding-left: 250;
@@ -67,4 +67,15 @@ img {
 h1, h2, h3, h4, p, ul, ol{
   list-style-position: inside;
   text-align: center;
+}
+
+.projectSlideShow{
+  display: flex;
+  flex-direction: row;
+}
+
+button.scrollButton{
+  align-self: center;
+  height: 300;
+  width: 200;
 }
