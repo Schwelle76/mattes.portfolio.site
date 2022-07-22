@@ -15,29 +15,29 @@ const averageProjectSlideWidth = () =>{
     return totalProjectSlideWidth / projectSlides.length;
 }
 
-
-
-let centralSlideIndex = 0;
+const centralSlideIndex = () => {
+    return Math.round(slideList.scrollLeft / averageProjectSlideWidth())
+}
 
 
 slideRightButton.onclick = function() {
+    
 
-    centralSlideIndex += 1;
-    if (centralSlideIndex >= projectSlides.length)
-        centralSlideIndex = 0;
+    let nextSlideIndex = centralSlideIndex() + 1;
+    if (nextSlideIndex >= projectSlides.length)
+        nextSlideIndex = 0;
 
-
-    slideList.scrollLeft = averageProjectSlideWidth() * centralSlideIndex;
+    slideList.scrollLeft = averageProjectSlideWidth() * nextSlideIndex;
     
 }
 
 slideLeftButton.onclick = function() {
-    centralSlideIndex -= 1;
-    if (centralSlideIndex < 0)
-    centralSlideIndex = projectSlides.length - 1;
 
+    let nextSlideIndex = centralSlideIndex() - 1;
+    if (nextSlideIndex < 0)
+        nextSlideIndex = projectSlides.length - 1;
 
-    slideList.scrollLeft = averageProjectSlideWidth() * centralSlideIndex;
+    slideList.scrollLeft = averageProjectSlideWidth() * nextSlideIndex;
 
 }
 });
