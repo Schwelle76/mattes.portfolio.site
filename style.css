@@ -13,9 +13,6 @@ body{
 
 }
 
-.name{
-}
-
 
 h1 {
     margin: 150px;
@@ -49,15 +46,15 @@ ul.projectSlideList {
 
 ul.projectSlideList li {
   flex: 0 0 auto;
-  width: 1000;
-  padding-left: 250;
-  padding-right: 250;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 
 }
 
 ul::-webkit-scrollbar { width: 0 !important }
 
-img {
+ul.projectSlideList li img {
   margin: 100px;
   height: 500px;
   width: auto;
@@ -76,6 +73,13 @@ h1, h2, h3, h4, p, ul, ol{
 
 button.scrollButton{
   align-self: center;
-  height: 300;
-  width: 200;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+button.scrollButton img{
+  width: 125;
+  height: 500;
+  opacity: .35;
 }

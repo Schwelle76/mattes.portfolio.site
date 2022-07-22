@@ -5,22 +5,39 @@ const slideLeftButton = document.getElementById('slideLeft');
 const slideList = document.getElementsByClassName("projectSlideList")[0];
 const projectSlides = document.getElementsByTagName("li");
 
-let centralSlide = 0;
+const averageProjectSlideWidth = () =>{
+    let totalProjectSlideWidth = 0;
+    for(let i = 0; i < projectSlides.length; i++){
+        const projectSlideStyle = getComputedStyle(projectSlides[i]);
+        totalProjectSlideWidth += parseFloat(projectSlideStyle.width);
+    }
+
+    return totalProjectSlideWidth / projectSlides.length;
+}
+
+
+
+let centralSlideIndex = 0;
 
 
 slideRightButton.onclick = function() {
-    console.log(projectSlides.length);
-    centralSlide += 1;
-    if (centralSlide >= projectSlides.length)
-        centralSlide = 0;
-    slideList.scrollLeft = 1500 * centralSlide + 50;
+
+    centralSlideIndex += 1;
+    if (centralSlideIndex >= projectSlides.length)
+        centralSlideIndex = 0;
+
+
+    slideList.scrollLeft = averageProjectSlideWidth() * centralSlideIndex;
     
 }
 
 slideLeftButton.onclick = function() {
-    centralSlide -= 1;
-    if (centralSlide < 0)
-    centralSlide = projectSlides.length;
-    slideList.scrollLeft = 1500 * centralSlide + 50;
+    centralSlideIndex -= 1;
+    if (centralSlideIndex < 0)
+    centralSlideIndex = projectSlides.length - 1;
+
+
+    slideList.scrollLeft = averageProjectSlideWidth() * centralSlideIndex;
+
 }
 });
