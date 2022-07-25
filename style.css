@@ -13,6 +13,15 @@ body{
 
 }
 
+h1, h2, h3, h4, p, ul, ol{
+  list-style-position: inside;
+  text-align: center;
+}
+
+p{
+  font-size: large;
+  text-align: left;  
+}
 
 h1 {
     margin: 150px;
@@ -30,6 +39,10 @@ font-size: 3em;
 
 h1, h2, h3, h4{
   font-family: "Calisto MT", "Arial", sans-serif;
+}
+
+footer{
+  height: 50;
 }
 
 ul.projectSlideList {
@@ -60,11 +73,6 @@ ul.projectSlideList li img {
 }
 
 
-h1, h2, h3, h4, p, ul, ol{
-  list-style-position: inside;
-  text-align: center;
-}
-
 .projectSlideShow{
   display: flex;
   flex-direction: row;
@@ -81,4 +89,18 @@ button.scrollButton img{
   width: 125;
   height: 500;
   opacity: .35;
+}
+
+.contactInformation{
+  display: flex;
+  margin: auto;
+  width: 200;
+  height: 40;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.contactInformation img{
+  height: 30;
+  margin-right: 10;
 }
