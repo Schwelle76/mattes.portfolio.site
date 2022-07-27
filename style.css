@@ -1,7 +1,18 @@
+@font-face {
+  font-family: sequel sans bold;
+  src: url(/fonts/Sequel-Sans-Medium-Disp.otf);
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: sequel sans light;
+  src: url(/fonts/Sequel-Sans-Light-Disp.otf);
+  font-weight:normal;
+}
+
 :root {
-  --background-color1: rgb(49, 119, 135);
-  --background-color2: #202124;
-  --background-color3: rgb(29, 83, 97);
+  --background-color1: rgb(0, 0, 0);
+  --background-color2: #121212;
 
   --text-color : rgb(255, 255, 255);
 }
@@ -9,8 +20,7 @@
 body{
     color:rgb(255, 255, 255);
     color: var(--text-color);
-    background-color:  rgb(8, 8, 8);
-    background-image: linear-gradient(to top right, var(--background-color1), var(--background-color3), var(--background-color2));
+    background-color:  var(--background-color1);
     font-size: 12px;
     margin: 0;
     margin-bottom: 50;
@@ -20,6 +30,7 @@ body{
 h1, h2, h3, h4, p, ul, ol{
   list-style-position: inside;
   text-align: center;
+  font-family: "sequel sans light";
 }
 
 p{
@@ -28,22 +39,48 @@ p{
 }
 
 h1 {
-    margin: 150px;
-    text-align: center;
+    padding-top: 100;
+    padding-left: 75;
+    margin: 0;
+    text-align:left;
+    font-family: "sequel sans bold";
     font-size: 8em;
-  }
-
-  h1.invisible {
-    display:none;
   }
 
 h2{
 font-size: 3em;
 }
 
-h1, h2, h3, h4{
-  font-family: "Calisto MT", "Arial", sans-serif;
+.aboutMe{
+  height: 100%;
 }
+
+.aboutMe p{
+  padding-left: 75;
+  margin: 0;
+}
+
+#longDescription{
+  width: 50%;
+  padding-top: 12;
+
+  overflow-y: hidden;
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-play-state: paused;
+
+}
+
+@keyframes appear {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height:400;
+  }
+}
+
 
 ul.projectSlideList {
   padding: 0;
@@ -88,8 +125,8 @@ button.scrollButton{
 
 button.scrollButton img{
   width: 125;
-  height: 500;
-  opacity: .35;
+  height: auto;
+  opacity: .9;
 }
 
 .contactMe{

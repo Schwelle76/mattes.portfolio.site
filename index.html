@@ -7,11 +7,25 @@
 </head>
     
 <body>
-    <div>
+    <div class = "aboutMe">
         <h1 class= "name">Mattes Zens</h1>
+        <p id = "shortDescription" onmouseover="showLongDescription()" onmouseout="hideLongDescription()">B.Sc. Code & Context, passionate Programmer and secret guitar hero. Want to know more?</p>
+        <p id = "longDescription">Started as a Hobby Unity Game Programmer, 
+            during my study of Social Work programming soon became my Passion. 
+            So I went on to Discover the depth of Coding through self-initiated 
+            Projects treating topics like Microcontrollers and AI until I decided 
+            to start to study the B.Sc. of Code & Context, where I learned about 
+            softwaredesign and -architecture, agile team coding, applied Ai, 
+            client-server applications, clean code, Internet of thing and more 
+            in a more professional manner. The studies were not only about coding 
+            but also about ethics, conceptual and visual design as well as fields 
+            of business adminisration such as entrepreneurial thinking, market and 
+            trend research and business economics.
+            Now im striving for new challenges and opportunities to grow. 
+            Contact me and become a Part of my Journey.</p>
     </div>
     <div class = "projectSlideShow">
-        <button class = "scrollButton" id="slideLeft" type="button"><img src='images/slide-left-button.png'/></button>
+        <button class = "scrollButton" id="slideLeft" type="button"><img src='images/arrow-left.png'/></button>
        
         <ul class = "projectSlideList">
             <li name = "projectSlide"><a href = 'https://bryanhogan.github.io/projects/AAI/index.html'><img src = 'images/ai.png'/></a></li>
@@ -22,7 +36,7 @@
             Interaction Design ist auf jeden Fall gut zu zeigen -->
         </ul>
         
-            <button class = "scrollButton" id="slideRight" type="button"><img src='images/slide-right-button.png'/></button>
+            <button class = "scrollButton" id="slideRight" type="button"><img src='images/arrow-right.png'/></button>
     </div>
     <div class = "contactMe">
         <h2>Contact me</h2>
@@ -36,7 +50,8 @@
     </div>
 
     <script src = "scroll-buttons.js"></script>
-
+    <script src = "about-me.js"></script>
+    
 </body>
 
 </html>
