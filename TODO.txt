@@ -8,3 +8,8 @@ TODO
 
 -Projekte bei Hover grown
 -Buttons schön machen
+
+-setInterval in attention-text wird ungenau wenn man raustabt
+    -vielleicht doch besser einzelne klassen/ids für jedes element
+        -oder transition, dann muss die klasse nicht vom element entfernt werden
+        und der transition-delay kann definiert werden.

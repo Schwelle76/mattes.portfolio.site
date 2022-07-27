@@ -83,6 +83,19 @@ font-size: 3em;
 
 }
 
+.attentionText{
+  position:relative;
+  top: 0;
+  animation: jumpUpAndDown 1.2s 1 ease;
+}
+
+@keyframes jumpUpAndDown {
+  0%{top: 0;}
+  33%{top: -10;}
+  66%{top: 5;}
+  100%{top: 0;}
+}
+
 
 ul.projectSlideList {
   padding: 0;
