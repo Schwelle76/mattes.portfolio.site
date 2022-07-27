@@ -1,15 +1,22 @@
+
+let initialMarginTop = null;
+
+function longDescription() {
+    return document.getElementById("longDescription");
+};
+
 function showLongDescription(){
-    const longDescription = document.getElementById("longDescription");
-    longDescription.style.animationDirection = "normal";
-    longDescription.style.animationFillMode = "forwards";
-    longDescription.style.animationPlayState = "running";
+    setInitialMarginTop();
+    longDescription().style.marginTop = -20;
 }
 
 function hideLongDescription(){
-    const longDescription = document.getElementById("longDescription");
-    longDescription.style.animationDirection = "reverse";
-    longDescription.style.animationFillMode = "forwards";
-    longDescription.style.animationPlayState = "running";
-    
+    setInitialMarginTop();
+    longDescription().style.marginTop = initialMarginTop;
+}
 
+function setInitialMarginTop(){
+    if (initialMarginTop == null){
+        initialMarginTop = longDescription().style.marginTop;
+    }
 }
