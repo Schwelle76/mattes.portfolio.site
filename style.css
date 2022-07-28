@@ -33,7 +33,7 @@ h1, h2, h3, h4, p, ul, ol{
   font-family: "sequel sans light";
 }
 
-p{
+p, span{
   font-size: large;
   text-align: left;  
 }
@@ -60,8 +60,13 @@ font-size: 3em;
   margin: 0;
 }
 
+.aboutMe span{
+  padding-left: 0;
+  margin-left: -3;
+}
+
 #shadeBand{
-  width: 1000;
+  width: 840;
   height: 280;
   margin-top: -250;
   z-index: -1;
@@ -76,8 +81,7 @@ font-size: 3em;
   padding-left: 75;
   padding-top: 0;
   margin-top: -310;
-
-  z-index: -5;
+  z-index: -2;
 
   transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
@@ -87,6 +91,7 @@ font-size: 3em;
   position:relative;
   top: 0;
   animation: jumpUpAndDown 1.2s 1 ease;
+  animation-delay: -1s;
 }
 
 @keyframes jumpUpAndDown {
