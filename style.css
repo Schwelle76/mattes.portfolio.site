@@ -165,7 +165,7 @@ button.scrollButton{
 button.scrollButton img{
   width: 100;
   height: auto;
-  opacity: .6;
+  filter: brightness(.6);
   transition: all 200ms;
 }
 
@@ -179,7 +179,7 @@ button.scrollButton img{
 
 button.scrollButton:hover img{
   transform: scale(1.4);
-  opacity: .9;
+  filter: brightness(.9);
 
 }
 
