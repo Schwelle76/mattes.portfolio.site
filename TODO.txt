@@ -13,3 +13,8 @@ TODO
     -vielleicht doch besser einzelne klassen/ids für jedes element
         -oder transition, dann muss die klasse nicht vom element entfernt werden
         und der transition-delay kann definiert werden.
+
+-Website responsive machen
+
+Cleaning:
+Height vars aus project-slide-view.js ziehen
