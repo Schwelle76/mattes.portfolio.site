@@ -1,12 +1,12 @@
 @font-face {
   font-family: sequel sans bold;
-  src: url(/fonts/Sequel-Sans-Medium-Disp.otf);
+  src: url(/fonts/Sequel-Sans-Medium-Disp.otf) format("opentype");
   font-weight:normal;
 }
 
 @font-face {
   font-family: sequel sans light;
-  src: url(/fonts/Sequel-Sans-Light-Disp.otf);
+  src: url(/fonts/Sequel-Sans-Light-Disp.otf) format("opentype");
   font-weight:normal;
 }
 

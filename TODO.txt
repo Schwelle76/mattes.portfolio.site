@@ -1,6 +1,11 @@
 TODO
 
 
+-Sequel font läd nicht wenn seite online (https://schwelle76.github.io/mattes.portfolio.site/) aufgerufen wird
+    -> Vielleicht hilft das: https://stackoverflow.com/questions/34226753/how-to-include-otf-in-css
+        ->https://stackoverflow.com/questions/3245141/using-otf-fonts-on-web-browsers
+        -> Könnte dann so aussehen: https://stackoverflow.com/questions/31205905/custom-font-not-showing-up-on-website
+
 
 -Projekte erweitern und ausfüllen
 -Kurzbeschreibung zu mir ('Student bei Code&Context' oder so)
