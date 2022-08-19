@@ -79,7 +79,7 @@ font-size: 3em;
   z-index: -1;
   height: 100%;
   width: 35%;
-  background: radial-gradient(90% 80% at 10% 35%, rgba(0, 0, 0, 0) 20%, #000000 70%)
+  background: radial-gradient(100% 80% at 10% 35%, rgba(0, 0, 0, 0) 22%, #000000 70%)
 }
 
 .aboutMe p{
