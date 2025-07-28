@@ -3,83 +3,95 @@
 <head>
     <meta charset="UTF-8" />
     <title>Mattes Zens - Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
-    
+
 <body>
-    <div class = "aboutMe">
-    <div class = "descriptions">
-        <h1 class= "name" onmouseover="showLongDescription()" onmouseout="hideLongDescription()">Mattes Zens</h1>
-        <p class = "shortDescription" onmouseover="showLongDescription()" onmouseout="hideLongDescription()">B.Sc. Code & Context and passionate programmer. 
-                <span class = "attentionText">&nbsp;</span>
-                <span class = "attentionText">W</span>
-                <span class = "attentionText">a</span>
-                <span class = "attentionText">n</span>
-                <span class = "attentionText">t</span>
-                <span class = "attentionText">&nbsp;</span>
-                <span class = "attentionText">t</span>
-                <span class = "attentionText">o</span>
-                <span class = "attentionText">&nbsp;</span>
-                <span class = "attentionText">k</span>
-                <span class = "attentionText">n</span>
-                <span class = "attentionText">o</span>
-                <span class = "attentionText">w</span>
-                <span class = "attentionText">&nbsp;</span>
-                <span class = "attentionText">m</span>
-                <span class = "attentionText">o</span>
-                <span class = "attentionText">r</span>
-                <span class = "attentionText">e</span>
-                <span class = "attentionText">?</span>
-        </p>
-        <div id = "shadeBand" onmouseover="showLongDescription()" onmouseout="hideLongDescription()"></div>
-        <p id = "longDescription">Started as a hobby Unity game programmer 
-            during my study of Social Work, programming soon became my passion. 
-            So I went on to discover the depth of coding through self-initiated 
-            Projects, treating topics like microcontrollers and AI until I finally decided 
-            to start to study the B.Sc. of Code & Context. There I learned about 
-            softwaredesign and -architecture, agile team coding, applied Ai, 
-            client-server applications, clean code, Internet of things and more 
-            in a more professional manner. The studies were not only about coding 
-            but also about ethics, conceptual and visual design as well as fields 
-            of business adminisration such as entrepreneurial thinking, market and 
-            trend research and business economics.
-            Now I'm striving for new challenges and opportunities to grow. 
-            Contact me and become part of my journey.</p>
+    <div class="aboutMe">
+        <div class="descriptions" onmouseleave="hideLongDescription()">
+            <div class=nameAndShortDescription onmouseover="showLongDescription()">
+                <div id="shadeBand">
+                    <h1 class="name">Mattes Zens</h1>
+                    <p class="shortDescription">B.Sc.
+                        Code & Context and passionate programmer.
+                        <span class="attentionText">
+                            <span class="attentionTextCharacter">&nbsp;</span>
+                            <span class="attentionTextCharacter">W</span>
+                            <span class="attentionTextCharacter">a</span>
+                            <span class="attentionTextCharacter">n</span>
+                            <span class="attentionTextCharacter">t</span>
+                            <span class="attentionTextCharacter">&nbsp;</span>
+                            <span class="attentionTextCharacter">t</span>
+                            <span class="attentionTextCharacter">o</span>
+                            <span class="attentionTextCharacter">&nbsp;</span>
+                            <span class="attentionTextCharacter">k</span>
+                            <span class="attentionTextCharacter">n</span>
+                            <span class="attentionTextCharacter">o</span>
+                            <span class="attentionTextCharacter">w</span>
+                            <span class="attentionTextCharacter">&nbsp;</span>
+                            <span class="attentionTextCharacter">m</span>
+                            <span class="attentionTextCharacter">o</span>
+                            <span class="attentionTextCharacter">r</span>
+                            <span class="attentionTextCharacter">e</span>
+                            <span class="attentionTextCharacter">?</span></span>
+                    </p>
+                </div>
+            </div>
+            <p id="longDescription">Started as a hobby Unity game programmer
+                during my study of Social Work, programming soon became my passion.
+                So I went on to discover the depth of coding through self-initiated
+                Projects, treating topics like microcontrollers and AI until I finally decided
+                to start to study the B.Sc. of Code & Context. There I learned about
+                softwaredesign and -architecture, agile team coding, applied Ai,
+                client-server applications, clean code, Internet of things and more
+                in a more professional manner. The studies were not only about coding
+                but also about ethics, conceptual and visual design as well as fields
+                of business adminisration such as entrepreneurial thinking, market and
+                trend research and business economics.
+                Now I'm striving for new challenges and opportunities to grow.
+                Contact me and become part of my journey.</p>
+        </div>
+        <div class="meImage">
+            <img src="images/me.png"></img>
+            <div id="radialSpotlight"></div>
+        </div>
     </div>
-    <div class="meImage">
-        <img src="images/me.png"></img>
-        <div id = "radialSpotlight"></div>
-    </div>
-    </div>
-  <div class = "projectSlideShow">
-       
-        <ul class = "projectSlideList">
-            <button class = "scrollButton" id="slideLeft" type="button"><img src='images/arrow-left.png'/></button>
-            <li name = "projectSlide"><a href = 'https://bryanhogan.github.io/projects/AAI/index.html'><img src = 'images/ai.png'/></a></li>
-            <li name = "projectSlide"><a href = 'https://mzens.pages.coco.study/startercode-gestaltungsportfolio-2020/'><img src = 'images/generative-gestaltung.png'/></a></li>
-            <li name = "projectSlide"><a href = 'https://www.youtube.com/watch?v=7zqv6YlaVhs&ab_channel=Mattes'><img src = 'images/wirefiretransparentscene.png'/></a></li>
-            <li name = "projectSlide"><a href = 'https://schwelle76.github.io/Random-Note-Generator/'><img src = 'images/random-note-generator.jpg'/></a></li>
+    <div class="projectSlideShow">
+
+        <ul class="projectSlideList">
+            <button class="scrollButton" id="slideLeft" type="button"><img src='images/arrow-left.png' /></button>
+            <li name="projectSlide"><a href='https://bryanhogan.github.io/projects/AAI/index.html'><img
+                        src='images/ai.png' /></a></li>
+            <li name="projectSlide"><a href='https://mzens.pages.coco.study/startercode-gestaltungsportfolio-2020/'><img
+                        src='images/generative-gestaltung.png' /></a></li>
+            <li name="projectSlide"><a href='https://www.youtube.com/watch?v=7zqv6YlaVhs&ab_channel=Mattes'><img
+                        src='images/wirefiretransparentscene.png' /></a></li>
+            <li name="projectSlide"><a href='https://schwelle76.github.io/Random-Note-Generator/'><img
+                        src='images/random-note-generator.jpg' /></a></li>
             <!-- Durchstöber mal Studiumsordner was sich noch gut präsentieren lässt.
             Interaction Design ist auf jeden Fall gut zu zeigen -->
-            <button class = "scrollButton" id="slideRight" type="button"><img src='images/arrow-right.png'/></button>
+            <button class="scrollButton" id="slideRight" type="button"><img src='images/arrow-right.png' /></button>
 
         </ul>
-        
+
     </div>
-    <div class = "contactMe">
+    <div class="contactMe">
         <h2>Contact me</h2>
-            <div class = "contactInformation">
-                <img src="images/mail-icon.svg"/><p>mattes.zens@web.de</p>
-            </div>
-            <div class = "contactInformation">
-                <img src="images/location-icon.svg"/><p>Cologne, Germany</p>
-            </div>
-        
+        <div class="contactInformation">
+            <img src="images/mail-icon.svg" />
+            <p>mattes.zens@web.de</p>
+        </div>
+        <div class="contactInformation">
+            <img src="images/location-icon.svg" />
+            <p>Cologne, Germany</p>
+        </div>
+
     </div>
 
-    <script src = "project-slide-view.js"></script>
-    <script src = "long-description.js"></script>
-    <script src = "attention-text.js"></script>
+    <script src="project-slide-view.js"></script>
+    <script src="long-description.js"></script>
+    <script src="attention-text.js"></script>
+    <script src="scroll-on-start.js"></script>
 </body>
 
 </html>

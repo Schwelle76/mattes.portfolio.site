@@ -1,5 +1,15 @@
 
-let initialMarginTop = null;
+let initialMarginTop = -20;
+
+document.addEventListener("DOMContentLoaded", function() {
+    hideLongDescription();
+});
+
+window.addEventListener("resize", function() {
+    // Deine Funktion hier, z.B.:
+    hideLongDescription();
+});
+
 
 function longDescription() {
     return document.getElementById("longDescription");
@@ -7,12 +17,12 @@ function longDescription() {
 
 function showLongDescription(){
     setInitialMarginTop();
-    longDescription().style.marginTop = -20;
+    longDescription().style.marginTop = initialMarginTop;//-20;
 }
 
 function hideLongDescription(){
     setInitialMarginTop();
-    longDescription().style.marginTop = initialMarginTop;
+    longDescription().style.marginTop = -longDescription().offsetHeight - 100;
 }
 
 function setInitialMarginTop(){

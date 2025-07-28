@@ -1,27 +1,18 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-
-    
-    const text = document.getElementsByClassName("attentionText");
-    const delayBetweenIterations = 5000;
+document.addEventListener("DOMContentLoaded", function() {
+    const text = document.getElementsByClassName("attentionTextCharacter");
+    const delayBetweenIterations = 2500;
     const delayBetweenLetters = 50;
 
-    
-    for(let i = 0; i < text.length; i++) {
-
-        callAnimationWithDelay(i);
-        setInterval(function() {
-            callAnimationWithDelay(i);
-        }, delayBetweenIterations);
+    function triggerWave() {
+        for (let i = 0; i < text.length; i++) {
+            const letter = text[i];
+            letter.classList.remove("attentionTextCharacter");
+            // Force reflow
+            void letter.offsetWidth;
+            letter.classList.add("attentionTextCharacter");
+            letter.style.animationDelay = (delayBetweenLetters * i) + "ms";
+        }
     }
 
-    function callAnimationWithDelay(elementIndex){
-        const letter = text[elementIndex];
-        letter.classList.remove("attentionText");
-        void letter.offsetWidth;
-        letter.classList.add("attentionText");
-        letter.style.animationDelay = delayBetweenLetters * elementIndex +"ms";
-    }
-
-    
-    
+    setInterval(triggerWave, delayBetweenIterations);
 });
