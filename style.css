@@ -3,7 +3,7 @@
   src: url('./fonts/Sequel-Sans-Medium-Disp.otf') format('opentype'),
        url('./fonts/Sequel-Sans-Medium-Disp.ttf') format('truetype'),
        url('./fonts/sequel-sans-medium-disp-webfont.woff') format('woff');
-  font-weight:normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -35,7 +35,7 @@ body{
 
 }
 
-h1, h2, h3, h4, p, ul, ol{
+h1, h2, h3, h4, p, ul, ol, strong{
 
   list-style-position: inside;
   text-align: center;
@@ -45,6 +45,11 @@ h1, h2, h3, h4, p, ul, ol{
 p, span{
   font-size: large;
   text-align: left;  
+}
+
+strong{
+    font-size: large;
+    font-family: "sequel sans bold";
 }
 
 h1 {
@@ -97,7 +102,7 @@ font-size: 3em;
   background: radial-gradient(100% 80% at 10% 35%, rgba(0, 0, 0, 0) 22%, #000000 70%)
 }
 
-.aboutMe h1, p{
+.aboutMe h1, .aboutMe p{
   padding-left: 8%;
   margin: 0;
 }
@@ -127,6 +132,28 @@ font-size: 3em;
 
   transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
+}
+
+.projectDescriptionContainer{
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  height: 20rem;
+  margin: auto;
+    text-align: center;
+  
+}
+
+.projectDescription{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+
+}
+
+.projectDescription p, .projectDescription h2{
+  text-align: center;
 }
 
 
