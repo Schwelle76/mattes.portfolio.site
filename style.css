@@ -270,16 +270,33 @@ button.scrollButton:hover img{
 }
 
 .contactMe{
-  padding-top: 50;
+  padding-top: 5em;
+  padding-left: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactMe h3{
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
 }
 
 .contactInformation{
   display: flex;
-  margin: auto;
-  width: 200;
-  height: 40;
-  justify-content:flex-start;
+  width: auto;
+  height: auto;
   align-items: center;
+  
+
+}
+
+.contactInformation p{
+  margin: 0;
+  
+  font-size: 1.2em;
+  font-family: "sequel sans light";
 }
 
 .contactInformation img{
