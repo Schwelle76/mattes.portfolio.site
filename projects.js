@@ -1,7 +1,7 @@
 const projects = [
     {
         name: "Motion Surfer",
-        description: "Mobile fitness game for iOS and Android that motivates users to move daily through fun and low barriers. Motion Surfer requires no extra hardware and is controlled via AI body-tracking using the front camera of the smartphone.",
+        description: "Want to exercise but struggle with motivation? Motion Surfer makes moving fun.<br/>This mobile fitness game turns real physical movement into in‑game actions using AI‑powered body tracking. Its low barrier and gamification make it easy to pick up daily – no gym, no excuses.",
         link: 'https://motionsurfer.de/',
         image: "images/motionsurfer.png",
         technologies: ["C#", "Unity", "Firebase", "MediaPipe BlazePose", "OneSignal"],
