@@ -16,6 +16,7 @@
 
 *{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -31,7 +32,6 @@ body{
     background-color:  var(--background-color1);
     font-size: 12px;
     margin: 0;
-    margin-bottom: 50;
 
 }
 
@@ -64,6 +64,43 @@ h2{
 font-size: 3em;
 }
 
+header{
+  position: fixed;
+  top: 0;
+  right: 4%;
+  width: 100vw;
+  z-index: 5;
+}
+
+nav{
+  padding-top: 3em;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  max-width: 33em;
+  min-width: 27em;
+  width: 70%;
+  margin: 0;
+  list-style: none;
+}
+
+nav a:link, nav a:visited{
+  font-size: x-large;
+  color: white;
+  text-decoration: none;
+  font-family: "sequel sans bold";
+  
+}
+
+nav a:hover, nav a:active{
+  text-decoration: underline;
+}
+
 .aboutMe{
   min-height: 100vh;
   display: flex;
@@ -76,6 +113,12 @@ font-size: 3em;
   width: 100%;
   padding-left: 3%;
   cursor: default;
+    padding-left: 7.5%;
+
+}
+
+.nameAndShortDescription{
+  padding-top: 7.5%;
 }
 
 .meImage{
@@ -84,7 +127,7 @@ font-size: 3em;
 
 .meImage img{
   position: relative;
-  margin-top: 50px;
+  margin-top: 20vh;
   max-height: 750px;
   padding-right: 300px;
 }
@@ -272,7 +315,7 @@ button.scrollButton:hover img{
 
 }
 
-.contactMe{
+#contactMe{
   padding-top: 5em;
   padding-left: 1em;
   width: 100%;
@@ -281,7 +324,7 @@ button.scrollButton:hover img{
   align-items: flex-start;
 }
 
-.contactMe h3{
+#contactMe h3{
   font-size: 1.5em;
   margin-bottom: 0.2em;
 }

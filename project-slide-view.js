@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const slideRightButton = document.getElementById('slideRight');
     const slideLeftButton = document.getElementById('slideLeft');
     const slideList = document.getElementsByClassName("projectSlideList")[0];
-    const projectSlides = document.getElementsByTagName("li");
+    const projectSlides = document.getElementsByClassName("projectSlide");
     const projectDescription = document.getElementsByClassName("projectDescription");
 
     const maxSlidesImgsHeight = 500;

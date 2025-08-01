@@ -7,105 +7,122 @@
 </head>
 
 <body>
-    <div class="aboutMe">
-        <div class="descriptions" onmouseleave="hideLongDescription()">
-            <div class=nameAndShortDescription onmouseover="showLongDescription()">
+
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contactMe">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="aboutMe" id="aboutMe">
+            <div class="descriptions" onmouseleave="hideLongDescription()">
                 <div id="shadeBand">
-                    <h1 class="name">Mattes Zens</h1>
-                    <p class="shortDescription">B.Sc. in
-                        Code & Context and passionate programmer.
-                        <span class="attentionText">
-                            <span class="attentionTextCharacter">&nbsp;</span>
-                            <span class="attentionTextCharacter">W</span>
-                            <span class="attentionTextCharacter">a</span>
-                            <span class="attentionTextCharacter">n</span>
-                            <span class="attentionTextCharacter">t</span>
-                            <span class="attentionTextCharacter">&nbsp;</span>
-                            <span class="attentionTextCharacter">t</span>
-                            <span class="attentionTextCharacter">o</span>
-                            <span class="attentionTextCharacter">&nbsp;</span>
-                            <span class="attentionTextCharacter">k</span>
-                            <span class="attentionTextCharacter">n</span>
-                            <span class="attentionTextCharacter">o</span>
-                            <span class="attentionTextCharacter">w</span>
-                            <span class="attentionTextCharacter">&nbsp;</span>
-                            <span class="attentionTextCharacter">m</span>
-                            <span class="attentionTextCharacter">o</span>
-                            <span class="attentionTextCharacter">r</span>
-                            <span class="attentionTextCharacter">e</span>
-                            <span class="attentionTextCharacter">?</span></span>
-                    </p>
+                    <div class=nameAndShortDescription onmouseover="showLongDescription()">
+                        <h1 class="name">Mattes Zens</h1>
+                        <p class="shortDescription">B.Sc. in
+                            Code & Context and passionate programmer.
+                            <span class="attentionText">
+                                <span class="attentionTextCharacter">&nbsp;</span>
+                                <span class="attentionTextCharacter">W</span>
+                                <span class="attentionTextCharacter">a</span>
+                                <span class="attentionTextCharacter">n</span>
+                                <span class="attentionTextCharacter">t</span>
+                                <span class="attentionTextCharacter">&nbsp;</span>
+                                <span class="attentionTextCharacter">t</span>
+                                <span class="attentionTextCharacter">o</span>
+                                <span class="attentionTextCharacter">&nbsp;</span>
+                                <span class="attentionTextCharacter">k</span>
+                                <span class="attentionTextCharacter">n</span>
+                                <span class="attentionTextCharacter">o</span>
+                                <span class="attentionTextCharacter">w</span>
+                                <span class="attentionTextCharacter">&nbsp;</span>
+                                <span class="attentionTextCharacter">m</span>
+                                <span class="attentionTextCharacter">o</span>
+                                <span class="attentionTextCharacter">r</span>
+                                <span class="attentionTextCharacter">e</span>
+                                <span class="attentionTextCharacter">?</span></span>
+                        </p>
+                    </div>
+                </div>
+                <div id="longDescription">
+                    <p>Started as a hobby Unity game developer, programming quickly became my passion.
+                        So I went on to discover the depth of coding through self-initiated
+                        projects, exploring areas like microcontrollers, AI and modding until I decided
+                        to pursue a B.Sc. in Code & Context. There I learned about
+                        softwaredesign and -architecture, agile coding, clean code, client-server applications and more
+                        in a more professional setting.</p>
+                    <br />
+
+                    <p>With my newly gained knowledge me and my small Team got funded by Gründerstipendium NRW to create
+                        Motion Surfer - a digital solution against the physical inactivity in our daily lifes.</p>
+                    <br />
+
+                    <p>Now I'm striving for new challenges and opportunities to grow.
+                        Contact me and become part of my journey.</p>
                 </div>
             </div>
-            <div id="longDescription"> <p>Started as a hobby Unity game developer, programming quickly became my passion.
-                So I went on to discover the depth of coding through self-initiated
-                projects, exploring areas like microcontrollers, AI and modding until I decided
-                to pursue a B.Sc. in Code & Context. There I learned about
-                softwaredesign and -architecture, agile coding, clean code, client-server applications and more
-                in a more professional setting.</p>
-                <br/>
+            <div class="meImage">
+                <img src="images/me-alpha.png"></img>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="projectSlideShow">
+                <button class="scrollButton" id="slideLeft" type="button"><img src='images/arrow-left.png' /></button>
+                <ul class="projectSlideList">
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            projectSlideList = document.querySelector(".projectSlideList");
 
-                <p>With my newly gained knowledge me and my small Team got funded by Gründerstipendium NRW to create Motion Surfer - a digital solution against the physical inactivity in our daily lifes.</p>
-                <br/>
-                
-                <p>Now I'm striving for new challenges and opportunities to grow.
-                Contact me and become part of my journey.</p></div>
-        </div>
-        <div class="meImage">
-            <img src="images/me-alpha.png"></img>
-        </div>
-    </div>
-    <div class="projectSlideShow">
-        <button class="scrollButton" id="slideLeft" type="button"><img src='images/arrow-left.png' /></button>
-        <ul class="projectSlideList">
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                projectSlideList = document.querySelector(".projectSlideList");
-
-                projects.forEach(project => {
-                    projectSlideList.innerHTML += `
-                            <li name="projectSlide">
+                            projects.forEach(project => {
+                                projectSlideList.innerHTML += `
+                            <li class="projectSlide">
                                 <a href="${project.link}">
                                     <img src="${project.image}" alt="${project.name}" />
                                 </a>
                             </li>`;
-                });
-            });
-            </script>
-        </ul>
-        <button class="scrollButton" id="slideRight" type="button"><img src='images/arrow-right.png' /></button>
+                            });
+                        });
+                    </script>
+                </ul>
+                <button class="scrollButton" id="slideRight" type="button"><img src='images/arrow-right.png' /></button>
 
-    </div>
-    <div class="projectDescriptionContainer">
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                projectDescriptionContainer = document.querySelector(".projectDescriptionContainer");
+            </div>
+            <div class="projectDescriptionContainer">
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        projectDescriptionContainer = document.querySelector(".projectDescriptionContainer");
 
-                projects.forEach(project => {
-                    projectDescriptionContainer.innerHTML += `
+                        projects.forEach(project => {
+                            projectDescriptionContainer.innerHTML += `
                         <div class="projectDescription">
                             <h2>${project.name}</h2>
                             <p>${project.description}</p>
                             <br />
                             <p><strong>Technologies: </strong>${project.technologies.join(", ")}</p>
                         </div>`;
-                });
-            });
-        </script>
-    </div>
-
-    <div class="contactMe">
-        <h3>Contact me:</h3>
-        <div class="contactInformation">
-            <img src="images/mail-icon.svg" />
-            <p>mattes.zens@web.de</p>
-        </div>
-        <div class="contactInformation">
-            <img src="images/location-icon.svg" />
-            <p>Düsseldorf, Germany</p>
-        </div>
-
-    </div>
+                        });
+                    });
+                </script>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contactMe">
+            <h3>Contact me:</h3>
+            <div class="contactInformation">
+                <img src="images/mail-icon.svg" />
+                <p>mattes.zens@web.de</p>
+            </div>
+            <div class="contactInformation">
+                <img src="images/location-icon.svg" />
+                <p>Düsseldorf, Germany</p>
+            </div>
+        </section>
+    </footer>
 
     <script src="projects.js"></script>
     <script src="project-slide-view.js"></script>
