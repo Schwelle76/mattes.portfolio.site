@@ -7,7 +7,7 @@ const projects = [
         technologies: ["C#", "Unity", "Firebase", "MediaPipe BlazePose", "OneSignal"],
     },
     {
-        name: "AI Handwriting Reader",
+        name: "AI Character Classifier",
         description: "A web application that displays a selfmodeled AI, which is able to read handwritten numbers and can be trained to read letters by the user.",
         link: 'https://bryanhogan.github.io/projects/AAI/index.html',
         image: 'images/ai.png',
