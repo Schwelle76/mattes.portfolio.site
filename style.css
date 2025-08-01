@@ -74,6 +74,7 @@ font-size: 3em;
   position: relative;
   flex-grow: 2;
   width: 100%;
+  padding-left: 3%;
   cursor: default;
 }
 
@@ -103,7 +104,6 @@ font-size: 3em;
 }
 
 .aboutMe h1, .aboutMe p{
-  padding-left: 8%;
   margin: 0;
 }
 
@@ -123,16 +123,21 @@ font-size: 3em;
 }
 
 #longDescription{
+  
+  background-color: red;
   position: relative;
   max-width: 600px;
   width: 100%;
   margin-top: -1000px;
   margin-bottom: 50px;
   z-index: -2;
+  padding: auto;
 
   transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
 }
+
+
 
 .projectDescriptionContainer{
   position: relative;
