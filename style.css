@@ -69,6 +69,7 @@ header{
   top: 0;
   right: 4%;
   width: 100vw;
+  height: 64px;
   z-index: 5;
 }
 
@@ -119,6 +120,24 @@ nav a:hover, nav a:active{
 
 .nameAndShortDescription{
   padding-top: 7.5%;
+}
+
+.attentionText{
+  white-space: nowrap;
+}
+
+.attentionTextCharacter{
+  position:relative;
+  top: 0;
+  animation: jumpUpAndDown 1.2s 1 ease;
+  animation-delay: -1s;
+}
+
+@keyframes jumpUpAndDown {
+  0%{top: 0;}
+  33%{top: -10;}
+  66%{top: 5;}
+  100%{top: 0;}
 }
 
 .meImage{
@@ -178,24 +197,47 @@ nav a:hover, nav a:active{
 
 }
 
+#projects{
+  display: flex;
 
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.headerSpace{
+  flex: 0 0 4.5rem;
+}
+
+.projectSlideShow{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background-color2);
+  flex: 1 1 auto;
+  height: 100%;
+  max-height: 1000px;
+  min-height: 100px;
+  overflow: hidden;
+}
 
 .projectDescriptionContainer{
   position: relative;
+  display: grid;
   width: 80%;
   max-width: 1000px;
-  height: 20rem;
-  margin: auto;
-    text-align: center;
-  
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: top;
+  flex: 1 0 auto;
 }
 
 .projectDescription{
-  position: absolute;
+  grid-area: 1/1;
   text-align: center;
   width: 100%;
-  margin: auto;
-
+  margin: 0;
 }
 
 .projectDescription p, .projectDescription h2{
@@ -203,36 +245,8 @@ nav a:hover, nav a:active{
 }
 
 
-.attentionText{
-  white-space: nowrap;
-}
-
-.attentionTextCharacter{
-  position:relative;
-  top: 0;
-  animation: jumpUpAndDown 1.2s 1 ease;
-  animation-delay: -1s;
-}
-
-@keyframes jumpUpAndDown {
-  0%{top: 0;}
-  33%{top: -10;}
-  66%{top: 5;}
-  100%{top: 0;}
-}
-
-
-.projectSlideShow{
-  display: flex;
-  flex-direction: row;
-  background-color: var(--background-color2);
-  height: 80vh;
-  max-height: 400px;
-
-}
-
 ul.projectSlideList {
-  height: auto;
+  height: 100%;
   padding: 0;
   border: 0;
   margin: 0;
@@ -250,10 +264,14 @@ ul.projectSlideList {
 }
 
 ul.projectSlideList li {
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   flex: 0 0 auto;
-  width: 100vw;;
+  width: 100vw;
+  height: 100%;
   padding-left: 0;
   padding-right: 0;
 
@@ -261,12 +279,19 @@ ul.projectSlideList li {
 
 ul::-webkit-scrollbar { width: 0 !important }
 
-ul.projectSlideList li img {
-  /*JUST A FALLBACK*/
-  height: 350px;
-  /*ACTUAL HEIGHT MUST BE SET IN project-slide-view.js*/
-
+ul.projectSlideList li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
   width: auto;
+}
+
+ul.projectSlideList li img {
+  max-height: 100%;
+  max-width: 60vw;
+  object-fit: contain;
   transition: filter 300ms;
 }
 
