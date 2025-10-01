@@ -1,10 +1,13 @@
-
 <html>
 
 <head>
     <meta charset="UTF-8" />
     <title>Mattes Zens</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -71,7 +74,7 @@
             </div>
         </section>
         <section id="projects">
-            <div class = "headerSpace"></div>
+            <div class="headerSpace"></div>
             <div class="projectSlideShow">
                 <button class="scrollButton" id="slideLeft" type="button"><img src='images/arrow-left.png' /></button>
                 <ul class="projectSlideList">
@@ -99,12 +102,17 @@
                         projectDescriptionContainer = document.querySelector(".projectDescriptionContainer");
 
                         projects.forEach(project => {
-                            projectDescriptionContainer.innerHTML += `
+                            let projectDescriptionHtml = `
                         <div class="projectDescription">
                             <h2>${project.name}</h2>
-                            <p>${project.description}</p>
-                            <p><strong>Technologies: </strong>${project.technologies.join(", ")}</p>
-                        </div>`;
+                            <p>${project.description}</p>`;
+
+                            projectDescriptionHtml += `<div class="technologyContainer">`;
+                            project.technologies.forEach(technology => {
+                                projectDescriptionHtml += `<a href= ${technology.link}><img class = "devicon" src="images/devicons/${technology.name}.svg" alt="${technology.name}" /></a>`;
+                            });
+                            projectDescriptionHtml += `</div></div>`;
+                            projectDescriptionContainer.innerHTML += projectDescriptionHtml;
                         });
                     });
                 </script>

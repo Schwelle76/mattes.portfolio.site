@@ -340,6 +340,24 @@ button.scrollButton:hover img{
 
 }
 
+.technologyContainer{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.devicon{
+  height: 70px;
+  margin: 10px;
+  filter: brightness(85%) saturate(75%); 
+}
+
+.devicon:hover{
+  filter: brightness(110%) saturate(110%);
+
+}
+
 #contactMe{
   padding-top: 5em;
   padding-left: 1em;

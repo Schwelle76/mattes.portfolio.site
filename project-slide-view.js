@@ -16,6 +16,7 @@ window.addEventListener("resize", function(){
     setInterval(function () {
         fadeAndGrowSlidesIntoCenter();
     }, 10);
+
     slideRightButton.onclick = function () {
 
 
@@ -80,5 +81,6 @@ function fadeAndGrowSlidesIntoCenter() {
         slidesImg(i).style.opacity = imgAwayFromItsCenterInPercent;
 
         projectDescription[i].style.opacity = imgAwayFromItsCenterInPercent * 4 - 2;
+        projectDescription[i].style.zIndex = Math.round(imgAwayFromItsCenterInPercent);
     }
 }
