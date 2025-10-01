@@ -7,7 +7,7 @@
         TENSORFLOW = { name: "TensorFlow", link: "https://www.tensorflow.org/" },
         ARDUINO = { name: "Arduino", link: "https://www.arduino.cc/" },
         REACT = { name: "React", link: "https://reactjs.org/" },
-        TYPESCRIPT = { name: "Typescript", link: "https://www.typescriptlang.org/" },
+        TYPESCRIPT = { name: "TypeScript", link: "https://www.typescriptlang.org/" },
         CPLUSPLUS = { name: "C++", link: "https://isocpp.org/" },
         UNITY = { name: "Unity", link: "https://unity.com/" },
         FIREBASE = { name: "Firebase", link: "https://firebase.google.com/" };
