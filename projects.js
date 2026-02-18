@@ -10,7 +10,10 @@
         TYPESCRIPT = { name: "TypeScript", link: "https://www.typescriptlang.org/" },
         CPLUSPLUS = { name: "C++", link: "https://isocpp.org/" },
         UNITY = { name: "Unity", link: "https://unity.com/" },
-        FIREBASE = { name: "Firebase", link: "https://firebase.google.com/" };
+        FIREBASE = { name: "Firebase", link: "https://firebase.google.com/" },
+        DOTNETCORE = { name: "NET Core", link: "https://dotnet.microsoft.com/" },
+        SQLServer = { name: "SQL Server", link: "https://www.microsoft.com/en-us/sql-server"};
+
     
 
 
@@ -28,6 +31,13 @@ const projects = [
         link: 'https://www.fluent-ear.com',
         image: 'images/project-icons/fluent-ear-transparent.png',
         technologies: [REACT, TYPESCRIPT, CSS3],  
+    },
+    {
+        name: "LogiSched",
+        description: "REST API built with .NET Core using Clean Architecture for a delivery scheduler that optimizes booking slots for owner-operator carriers and their clients. Currently in early development.",
+        link: 'https://github.com/Schwelle76/transport-manager-backend-dotnet',
+        image: 'images/project-icons/logisched.png',
+        technologies: [CSHARP, DOTNETCORE, SQLServer],
     },
     {
         name: "AI Character Classifier",
